@@ -58,6 +58,7 @@ if(is_dir($catalog)){
 }
 ?>
         </div>
+        
         <div class="screenPreview"></div>
     </div>
 </div>
