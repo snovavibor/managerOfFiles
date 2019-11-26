@@ -39,12 +39,12 @@ if(is_dir($catalog)){
         while( false !==$file = readdir($dh)){
            
             if($file != '.' && $file !='..'){
-                $pt = FolderOrFile($file, $catalog);
+                $pt = folderOrFile($file, $catalog);
                 //сортировка массива директории в начало, файлы в конец
                 if(strrpos($pt,'*')){
                     array_unshift($tot, $pt);
                 }else{
-                    $tot[] = FolderOrFile($file, $catalog);
+                    $tot[] = folderOrFile($file, $catalog);
                 }               
                               
             }
@@ -58,7 +58,7 @@ if(is_dir($catalog)){
 }
 ?>
         </div>
-        
+
         <div class="screenPreview"></div>
     </div>
 </div>

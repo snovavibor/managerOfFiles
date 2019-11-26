@@ -14,7 +14,7 @@ function cutOfPath($path,$des)
 /*
 *добавляет метку к директориям для сортировки в массиве
 */
-function FolderOrFile($file, $catalog)
+function folderOrFile($file, $catalog)
 {
     
     if(filetype($catalog.'/'.$file)== 'dir'){
